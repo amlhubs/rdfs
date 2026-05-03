@@ -1,0 +1,42 @@
+{
+  "name": "@amlhubs/rdfs",
+  "version": "0.0.1",
+  "description": "RDF Schema 1.1 (W3C Rec 2014-02-25) — extensible base classes and interfaces for the RDFS vocabulary-description metamodel layered on RDF: rdfs:Resource, rdfs:Class, rdfs:Literal, rdfs:Datatype, rdfs:Container, rdfs:ContainerMembershipProperty, and the core RDFS properties (subClassOf, subPropertyOf, domain, range, label, comment, seeAlso, isDefinedBy, member). Pure RDFS, peers on @amlhubs/rdf for the underlying triple/IRI/Literal primitives.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amlhubs/rdfs.git",
+    "directory": "."
+  },
+  "peerDependencies": {
+    "@amlhubs/rdf": "^0.0.1"
+  },
+  "keywords": [
+    "metamodel",
+    "rdfs",
+    "rdf-schema",
+    "rdf-1-1",
+    "w3c",
+    "semantic-web",
+    "vocabulary",
+    "aml",
+    "agenihub"
+  ],
+  "license": "UNLICENSED"
+}
